@@ -21,6 +21,20 @@ A full-stack Mutual Fund Analytics Platform built using publicly available India
 
 ---
 
+## 🛠️ Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- SciPy
+- SQLite
+- Jupyter Notebook
+- Power BI
+- Git & GitHub
+
+---
+
 ## 🗂️ Project Structure
 
 ```
@@ -28,7 +42,7 @@ mutual_fund_analytics/
 ├── data/
 │   ├── raw/           ← Original CSV files + live NAV fetches
 │   └── processed/     ← Cleaned outputs from data_ingestion.py
-├── notebooks/         ← Jupyter EDA notebooks (Day 3+)
+├── notebooks/
 │   ├── EDA_Analysis.ipynb
 │   ├── Performance_Analytics.ipynb
 │   └── Advanced_Analytics.ipynb      
@@ -86,7 +100,7 @@ Put all 10 provided CSV files into `data/raw/` with these exact names:
 - `09_holdings.csv`
 - `10_benchmark.csv`
 
-### 5. Run Day 1 scripts
+### 5. Run the project scripts
 ```bash
 # Ingest and inspect CSV files
 python data_ingestion.py
@@ -111,7 +125,7 @@ python live_nav_fetch.py
 
 ---
 
-## 🔑 Key Deliverables
+#
 
 - ✅ Python ETL Pipeline
 - ✅ SQLite Database & Star Schema

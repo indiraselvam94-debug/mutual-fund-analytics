@@ -1,9 +1,9 @@
 # 📊 Mutual Fund Analytics Platform
 **Bluestock Fintech – Capstone Project**
 
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
-![Day](https://img.shields.io/badge/Day-1%20of%207-blue)
-![Python](https://img.shields.io/badge/Python-3.10%2B-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Project](https://img.shields.io/badge/Capstone-Mutual%20Fund%20Analytics-blue)
+![Python](https://img.shields.io/badge/Python-3.14-green)
 
 ---
 
@@ -29,12 +29,21 @@ mutual_fund_analytics/
 │   ├── raw/           ← Original CSV files + live NAV fetches
 │   └── processed/     ← Cleaned outputs from data_ingestion.py
 ├── notebooks/         ← Jupyter EDA notebooks (Day 3+)
+│   ├── EDA_Analysis.ipynb
+│   ├── Performance_Analytics.ipynb
+│   └── Advanced_Analytics.ipynb      
 ├── sql/               ← Schema DDL and queries (Day 2+)
 ├── dashboard/         ← Power BI / Tableau files (Day 5+)
 ├── reports/           ← Final PDF report and slide deck (Day 7)
 ├── data_ingestion.py  ← Day 1: Load & inspect 10 CSV datasets
 ├── live_nav_fetch.py  ← Day 1: Fetch live NAV from mfapi.in
 ├── requirements.txt   ← Python dependencies
+├── fund_scorecard.csv
+├── alpha_beta.csv
+├── var_cvar_report.csv
+├── benchmark_comparison.png
+├── rolling_sharpe_chart.png
+├── recommender.py
 └── README.md
 ```
 
@@ -44,7 +53,7 @@ mutual_fund_analytics/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/mutual-fund-analytics.git
+git clone https://github.com/indiraselvam94-debug/mutual-fund-analytics.git
 cd mutual-fund-analytics
 ```
 
@@ -92,25 +101,27 @@ python live_nav_fetch.py
 
 | Day | Task | Status |
 |-----|------|--------|
-| **Day 1–2** | ETL + SQLite setup | 🔄 In Progress |
-| **Day 3** | Star schema + EDA (15+ charts) | ⏳ Pending |
-| **Day 4** | Risk metrics (Sharpe, Sortino, VaR) | ⏳ Pending |
-| **Day 5** | Dashboard build (Power BI / Tableau) | ⏳ Pending |
-| **Day 6** | Demographics + benchmark comparison | ⏳ Pending |
-| **Day 7** | Docs, deck, GitHub final | ⏳ Pending |
+| Day 1 | Data Ingestion | ✅ Completed |
+| Day 2 | Data Cleaning & SQLite | ✅ Completed |
+| Day 3 | Exploratory Data Analysis (EDA) | ✅ Completed |
+| Day 4 | Performance Analytics | ✅ Completed |
+| Day 5 | Dashboard Development | ✅ Completed |
+| Day 6 | Advanced Analytics | ✅ Completed |
+| Day 7 | Documentation & Final Submission | ✅ Completed |
 
 ---
 
 ## 🔑 Key Deliverables
 
-- `O1` Python ETL pipeline (`.py` scripts)
-- `O2` Star schema SQL (`schema.sql`)
-- `O3` EDA notebook with 15+ charts
-- `O4` Risk metrics notebook + output CSVs
-- `O5` Power BI / Tableau dashboard (`.pbix` / `.twbx`)
-- `O6` Demographic insights
-- `O7` Benchmark comparison (Nifty 50, Nifty 100, BSE SmallCap)
-- `O8` PDF report + 12-slide presentation deck
+- ✅ Python ETL Pipeline
+- ✅ SQLite Database & Star Schema
+- ✅ Exploratory Data Analysis (EDA)
+- ✅ Performance Analytics
+- ✅ Advanced Analytics & Risk Metrics
+- ✅ Power BI Dashboard
+- ✅ Benchmark Comparison
+- ✅ Final Project Report
+- ✅ Presentation (PPT)
 
 ---
 
@@ -124,5 +135,4 @@ python live_nav_fetch.py
 
 ## 👤 Team
 
-Bluestock Fintech Capstone · Individual Project  
-*Due: 24 Jun 2026*
+Bluestock Fintech Capstone · Individual Project
